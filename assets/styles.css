@@ -9,8 +9,14 @@ ul {
 }
 .navbar {
     overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 .dropdown {
     float: left;
@@ -30,7 +36,7 @@ ul {
     background-color: lightgrey;
 }
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
