@@ -58,9 +58,3 @@ ul {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-#mathsDetail-Title{
-	float: left;
-}
-#mathsDetail-Description{
-	float: left;
-}
