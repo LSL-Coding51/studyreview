@@ -10,7 +10,7 @@ ul {
 li {
 	float: left;
 }
-li a {
+li #navbar-items {
 	display: block;
 	color: #000000;
 	text-align: center;
