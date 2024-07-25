@@ -61,8 +61,10 @@ ul {
 #mathDetail {
 	float: left;
 	margin: left;
+	text-align: left;
 }
 #englishDetail{
 	float: right;
 	margin: right;
+	text-align: right;
 }
