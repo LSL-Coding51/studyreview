@@ -58,3 +58,11 @@ ul {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#mathDetail {
+	float: left;
+	margin: left;
+}
+#englishDetail{
+	float: right;
+	margin: right;
+}
