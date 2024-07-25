@@ -68,3 +68,7 @@ ul {
 	margin: right;
 	text-align: right;
 }
+#hassdetail{
+	float: left;
+	margin: left;
+	text-align: left;
