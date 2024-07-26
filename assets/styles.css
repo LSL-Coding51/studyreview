@@ -1,5 +1,8 @@
 html {
     font-family: 'Poppins';
+	display: flex;
+    justify-content: space-around;
+	margin: 0;
 }
 ul {
 	list-style-type: none;
