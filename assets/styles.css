@@ -100,7 +100,7 @@ ul {
 #topTitleIndex::after {
 	content: "StudyReview";
 }
-#mscSection {
+#mcsSection {
 	text-align: center;
 }
 ::selection {
