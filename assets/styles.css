@@ -97,3 +97,6 @@ ul {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+#topTitleIndex::after {
+	content: "StudyReview";
+}
