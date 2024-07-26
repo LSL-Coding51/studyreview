@@ -103,9 +103,3 @@ ul {
 #mscSection{
 	margin: auto;
 }
-#mcsSection::before {
-	content: "----------"
-}
-#mcsSection::after{
-	content: "----------"
-}
