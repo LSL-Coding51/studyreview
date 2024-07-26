@@ -63,22 +63,22 @@ ul {
 	margin: left;
 	text-align: left;
 }
-#englishDetail{
+#englishDetail {
 	float: right;
 	margin: right;
 	text-align: right;
 }
-#hassdetail{
+#hassdetail {
 	float: left;
 	margin: left;
 	text-align: left;
+}
 .hover-section-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
 }
-
 .hover-section {
     width: 200px;
     height: 150px;
@@ -90,12 +90,10 @@ ul {
     text-align: center;
     border-radius: 10px;
 }
-
 .hover-section:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
 .title {
     font-size: 1.5em;
     margin-bottom: 10px;
