@@ -73,7 +73,7 @@ ul {
 	margin: left;
 	text-align: left;
 .hover-section-container {
-	display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
@@ -89,14 +89,14 @@ ul {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     border-radius: 10px;
-            }
+}
 
 .hover-section:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-#subjectTitleHoverSection {
+.title {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
