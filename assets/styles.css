@@ -100,9 +100,12 @@ ul {
 #topTitleIndex::after {
 	content: "StudyReview";
 }
+#mscSection{
+	text-align: center;
+}
 #mcsSection::before {
-	content: "~~~~~~~~~~"
+	content: "----------"
 }
 #mcsSection::after{
-	content: "~~~~~~~~~~"
+	content: "----------"
 }
