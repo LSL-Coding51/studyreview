@@ -101,7 +101,7 @@ ul {
 	content: "StudyReview";
 }
 #mscSection{
-	text-align: center;
+	margin: 0 auto;
 }
 #mcsSection::before {
 	content: "----------"
