@@ -104,6 +104,6 @@ ul {
 	text-align: center;
 }
 ::selection {
-	background-color: rgb(180, 208, 250);
+	background-color: lightskyblue;
 	color: #000
 }
