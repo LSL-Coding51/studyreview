@@ -104,6 +104,6 @@ ul {
 	text-align: center;
 }
 ::selection {
-	background-color: lightskyblue;
-	color: #000
+	background-color: lightblue;
+	color: #f0f0f0
 }
