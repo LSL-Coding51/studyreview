@@ -100,7 +100,11 @@ ul {
 #topTitleIndex::after {
 	content: "StudyReview";
 }
-#mscSection{
+#mscSection {
 	margin: auto;
 	text-align: center;
+}
+::selection {
+	background-color: rgb(180, 208, 250);
+	color: #fff
 }
