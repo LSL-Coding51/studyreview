@@ -10,7 +10,6 @@ ul {
 .navbar {
     overflow: hidden;
     position: fixed;
-    background-color: #FFF;
 }
 .navbar a {
      float: left;
