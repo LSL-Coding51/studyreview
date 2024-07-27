@@ -114,7 +114,7 @@ ul {
 footer {
 	background-color: lightskyblue;
 	width: 100%;
-	position: fixed;
 	left: 0;
 	bottom: 0;
+	color: #FFF;
 }
