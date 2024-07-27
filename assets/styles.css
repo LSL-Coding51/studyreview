@@ -9,14 +9,16 @@ ul {
 }
 .navbar {
     overflow: hidden;
+    position: fixed;
+	
 }
 .navbar a {
-  float: left;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+     float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 .dropdown {
     float: left;
@@ -26,7 +28,7 @@ ul {
     font-size: 16px;
     border: none;
     outline: none;
-	color: black;
+    color: black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -59,19 +61,19 @@ ul {
     display: block;
 }
 #mathDetail {
-	float: left;
-	margin: left;
-	text-align: left;
+    float: left;
+    margin: left;
+    text-align: left;
 }
 #englishDetail {
-	float: right;
-	margin: right;
-	text-align: right;
+    float: left;
+    margin: left;
+    text-align: left;
 }
 #hassdetail {
-	float: left;
-	margin: left;
-	text-align: left;
+    float: left;
+    margin: left;
+    text-align: left;
 }
 .hover-section-container {
     display: flex;
@@ -98,24 +100,24 @@ ul {
     margin-bottom: 10px;
 }
 #topTitleIndex::after {
-	content: "StudyReview";
+    content: "StudyReview";
 }
 #mcsSection {
-	text-align: center;
+    text-align: center;
 }
 ::selection {
-	background-color: #81d5ff;
-	color: #5f5f5f;
+    background-color: #81d5ff;
+    color: #5f5f5f;
 }
 #indexFooter {
-	color: #000;
-	text-decoration: none;
+     color: #000;
+     text-decoration: none;
 }
 footer {
-	background-color: lightskyblue;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	color: #FFF;
-	margin: 0;
+    background-color: lightskyblue;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #FFF;
+    margin: 0;
 }
