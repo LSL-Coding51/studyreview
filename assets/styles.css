@@ -110,5 +110,6 @@ ul {
 #indexFooter {
 	color: #000;
 	text-decoration: none;
-	background-color: #5f5f5f;
 }
+footer {
+	background-color: lightskyblue;
