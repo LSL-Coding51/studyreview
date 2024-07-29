@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-    <h1>Login</h1>
-    <form id="login-form">
-        <label for="username">Username:</label>
-        <input type="email" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    <p id="message"></p>
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
-    <script src="/assets/login.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="/assets/styles.css">
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="email" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+        <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+        <script src="/assets/login.js"></script>
+        <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAjCPe0KTZVSueLUBEEFjPa7R0wQ4wOJ6c",
+        authDomain: "studyreviewau.firebaseapp.com",
+        projectId: "studyreviewau",
+        storageBucket: "studyreviewau.appspot.com",
+        messagingSenderId: "26947223493",
+        appId: "1:26947223493:web:6a51b1b622be5df022d5ac",
+        measurementId: "G-121H8R5VX0"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
