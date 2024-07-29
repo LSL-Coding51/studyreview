@@ -1,23 +1,27 @@
 document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the default way
+    event.preventDefault();
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('assets/users.json')
-        .then(response => response.json())
-        .then(users => {
-            const user = users.find(user => user.username === username && user.password === password);
-            const messageElement = document.getElementById('message');
-            
-            if (user) {
-                messageElement.textContent = 'Login successful!';
-                messageElement.style.color = 'green';
-                // Redirect or proceed to the next step after successful login
-            } else {
-                messageElement.textContent = 'Invalid username or password.';
-                messageElement.style.color = 'red';
-            }
-        })
-        .catch(error => console.error('Error loading JSON:', error));
+    fetch('http://localhost:5000/login', { // Update URL if hosted elsewhere
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.access_token) {
+            // Handle successful login, store token, etc.
+            document.getElementById('message').textContent = 'Login successful!';
+            document.getElementById('message').style.color = 'green';
+        } else {
+            // Handle login failure
+            document.getElementById('message').textContent = 'Invalid username or password.';
+            document.getElementById('message').style.color = 'red';
+        }
+    })
+    .catch(error => console.error('Error:', error));
 });
