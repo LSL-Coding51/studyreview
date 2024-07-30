@@ -24,6 +24,9 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
 }
+.navbar a .dark-mode{
+    color: #FFF;
+}
 .dropdown {
     float: left;
     overflow: hidden;
