@@ -6,6 +6,7 @@ html {
 .dark-mode {
     background-color: #313131;
     color: #ddd;
+}
 ul {
     list-style-type: none;
     margin: 0;
