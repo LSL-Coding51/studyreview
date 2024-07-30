@@ -1,6 +1,11 @@
 html {
     font-family: 'Poppins';
+    background-color: #fff;
+    color: #000;
 }
+.dark-mode {
+    background-color: #313131;
+    color: #ddd;
 ul {
     list-style-type: none;
     margin: 0;
