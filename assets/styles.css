@@ -17,7 +17,7 @@ ul {
     overflow: hidden;
 }
 .navbar a {
-     float: left;
+    float: left;
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
@@ -115,7 +115,6 @@ ul {
      text-decoration: none;
 }
 footer {
-    background-color: lightskyblue;
     width: 100%;
     color: #FFF;
     margin-left: 0;
