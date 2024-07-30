@@ -124,3 +124,7 @@ footer {
     margin-left: 0;
     padding: 0;
 }
+#darkModeToggleBtn {
+    border: none;
+    background: none;
+}
