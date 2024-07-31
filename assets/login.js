@@ -1,13 +1,13 @@
-document.getElementById('login').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
     fetch('assets/users.json')
         .then(response => response.json())
         .then(users => {
-            var user = [username];
+            const user = users[username];
             if (user && user.password === password) {
                 document.getElementById('message').textContent = 'Login successful!';
                 document.getElementById('message').style.color = 'green';
