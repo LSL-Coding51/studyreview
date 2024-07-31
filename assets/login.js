@@ -1,24 +1,27 @@
-document.getElementById("login").addEventListener('submit', function(event) {
-  event.preventDefault();
+retrieve data from a JSON file
+fetch('users.json')
+  .then(response => response.json())
+  .then(data => {
+    const users = data.users;
 
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+    // Assuming you have input fields for username and password with ids "usernameInput" and "passwordInput"
+    const username = document.getElementById("usernameInput").value;
+    const password = document.getElementById("passwordInput").value;
 
-  fetch('/assets/users.json')
-    .then(response => response.json())
-    .then(users => {
-      const user = users[username];
-      if (user && user.password === password) {
-        document.getElementById('message').textContent = 'Login successful!';
-        document.getElementById('message').style.color = 'green';
-      } else {
-        document.getElementById('message').textContent = 'Invalid username or password.';
-        document.getElementById('message').style.color = 'red';
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching users:', error);
-      document.getElementById('message').textContent = 'Error fetching user data.';
-      document.getElementById('message').style.color = 'red';
-    });
-});
+    // Check if the input username and password match any entry in the JSON data
+    const matchedUser = users.find(user => user.username === username && user.password === password);
+
+    if (matchedUser) {
+      console.log("Login successful");
+      // Add code here to redirect or display a success message
+      // For example: window.location.href = "dashboard.html";
+    } else {
+      console.log("Incorrect username or password");
+      // Add code here to display an error message to the user
+      // For example: document.getElementById("errorMessage").innerText = "Incorrect username or password";
+    }
+  })
+  .catch(error => {
+     console.error('Error:', error);
+     // Add code here to handle errors, such as displaying an error message to the user
+  });
