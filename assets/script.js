@@ -24,6 +24,6 @@ document.getElementById("login").addEventListener('submit', function(event) {
 });
 
 function toggleDarkMode() {
-   var element = document.body;
+   var element = document.html;
    element.classList.toggle("dark-mode");
 }
