@@ -2,6 +2,7 @@ html {
     font-family: 'Poppins';
     background-color: #fff;
     color: #000;
+    padding: 2px;
 }
 .dark-mode {
     background-color: #313131;
