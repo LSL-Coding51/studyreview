@@ -23,6 +23,6 @@ document.getElementById("login").addEventListener('submit', function(event) {
     });
 });
 function toggleDarkMode() {
-   var element = document;
+   var element = document.getElementById('html');
    element.classList.toggle("dark-mode");
 }
