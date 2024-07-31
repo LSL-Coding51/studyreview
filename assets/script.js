@@ -22,7 +22,3 @@ document.getElementById("login").addEventListener('submit', function(event) {
       document.getElementById('message').style.color = 'red';
     });
 });
-function toggleDarkMode() {
-   var element = document.getElementById('html');
-   element.classList.toggle("dark-mode");
-}
