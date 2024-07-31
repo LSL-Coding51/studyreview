@@ -1,4 +1,4 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit') {
     event.preventDefault();
 
     const username = document.getElementById('username').value;
