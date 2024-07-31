@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('login-form');
     const darkModeToggleBtn = document.getElementById('darkModeToggleBtn');
     const body = document.body;
-   
+
+    // Check for dark mode preference in localStorage
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
     }
+
+    darkModeToggleBtn.addEventListener('click', toggleDarkMode);
+});
+
 function toggleDarkMode() {
-   var element = document.getElementById('html');
-   element.classList.toggle("dark-mode");
-}
-function toggleDarkMode() {
-    const body = document.getElementById('html');
+    const body = document.body;
     body.classList.toggle('dark-mode');
 
     if (body.classList.contains('dark-mode')) {
@@ -19,8 +19,4 @@ function toggleDarkMode() {
     } else {
         localStorage.removeItem('darkMode');
     }
-}
-function toggleDarkMode() {
-   var element = document.getElementById('html');
-   element.classList.toggle("dark-mode");
 }
