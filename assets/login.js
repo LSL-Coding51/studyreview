@@ -4,7 +4,7 @@ document.getElementById("login").addEventListener('submit', function(event) {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  fetch('users.json')
+  fetch('/assets/users.json')
     .then(response => response.json())
     .then(users => {
       const user = users[username];
