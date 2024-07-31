@@ -20,3 +20,7 @@ function toggleDarkMode() {
         localStorage.removeItem('darkMode');
     }
 }
+function toggleDarkMode() {
+   var element = document.getElementById('html');
+   element.classList.toggle("dark-mode");
+}
