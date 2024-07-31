@@ -1,14 +1,14 @@
 [
   {
-    "username": "user1",
-    "password": "password1"
+    "username": "1",
+    "password": "1"
   },
   {
-    "username": "user2",
-    "password": "password2"
+    "username": "a",
+    "password": "a"
   },
   {
-    "username": "user3",
-    "password": "password3"
+    "username": "abc",
+    "password": "abc"
   }
 ]
