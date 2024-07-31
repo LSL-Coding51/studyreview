@@ -16,6 +16,10 @@ ul {
 }
 .navbar {
     overflow: hidden;
+    color: #000;
+}
+.navbar .dark-mode {
+    color: #FFF;
 }
 .navbar a {
     float: left;
