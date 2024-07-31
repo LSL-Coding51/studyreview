@@ -1,4 +1,3 @@
-retrieve data from a JSON file
 fetch('users.json')
   .then(response => response.json())
   .then(data => {
