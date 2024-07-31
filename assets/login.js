@@ -7,7 +7,7 @@ document.getElementById('login').addEventListener('submit', function(event) {
     fetch('assets/users.json')
         .then(response => response.json())
         .then(users => {
-            var user = users[username];
+            var user = [username];
             if (user && user.password === password) {
                 document.getElementById('message').textContent = 'Login successful!';
                 document.getElementById('message').style.color = 'green';
