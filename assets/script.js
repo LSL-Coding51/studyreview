@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function toggleDarkMode() {
-    const body = document.body;
+    const body = document.getElementById('html');
     body.classList.toggle('dark-mode');
 
     if (body.classList.contains('dark-mode')) {
